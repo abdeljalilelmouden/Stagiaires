@@ -23,7 +23,7 @@ public class Stagiaire {
 	private Date dateDeFinDeStage;
 	private Date dateDeNaissance;
 	private int telephone;
-	private boolean remunération;
+	private boolean remuneration;
 	
 	@ManyToOne
 	@JoinColumn(name = "departement_id", nullable = false)
@@ -110,11 +110,11 @@ public class Stagiaire {
 	}
 
 	public boolean isRemunération() {
-		return remunération;
+		return remuneration;
 	}
 
 	public void setRemunération(boolean remunération) {
-		this.remunération = remunération;
+		this.remuneration = remunération;
 	}
 
 	public Departement getDepartement() {
@@ -139,7 +139,7 @@ public class Stagiaire {
 		this.dateDeFinDeStage = dateDeFinDeStage;
 		this.dateDeNaissance = dateDeNaissance;
 		this.telephone = telephone;
-		this.remunération = remunération;
+		this.remuneration = remunération;
 		this.departement = departement;
 	}
 

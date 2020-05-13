@@ -21,6 +21,8 @@ public class ConfigurationRepositorie implements RepositoryRestConfigurer{
 		// AFFICHER LE ID DANS LES RESULTA JSON 
 		config.exposeIdsFor(entityManager.getMetamodel().getEntities().stream().map(Type::getJavaType).toArray(Class[]::new));
 		
+		config.getCorsRegistry().addMapping("/**").allowedOrigins("http://localhost:4200");
+		
 		
 	}
 

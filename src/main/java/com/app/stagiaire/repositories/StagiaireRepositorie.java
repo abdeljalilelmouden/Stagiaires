@@ -5,7 +5,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import com.app.stagiaire.entities.Stagiaire;
 
-@RepositoryRestResource(path = "stagiaires-web-rest", collectionResourceRel = "stagiaires-information")
+@RepositoryRestResource(path = "stagiaires-web-rest")
 public interface StagiaireRepositorie extends JpaRepository<Stagiaire, Long>{
 
 }
